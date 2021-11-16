@@ -5,7 +5,7 @@ describe('App', () => {
   it('Contains the compiled JavaScript', async () => {
     const data = fs.readFileSync('./public/main.js', 'utf8')
     expect(data).toMatchSnapshot()
-    })
+  })
 })
 
 describe('Game', () => {
@@ -20,7 +20,7 @@ describe('Game', () => {
     it('Initializes with two players', async () => {
       expect(game.p1).toBe('Salem')
       expect(game.p2).toBe('Nate')
-  })
+    })
 
     it('Initializes with an empty board', async () => {
       for (let r = 0; r < game.board.length; r++) {
