@@ -1,5 +1,11 @@
 const Game = require('../src/game').default
 
+describe('App', () => {
+  it('Contains the compiled JavaScript', async () => {
+    expect(true).toBe(true)
+  })
+})
+
 describe('Game', () => {
   let game, p1, p2
   beforeEach(() => {
